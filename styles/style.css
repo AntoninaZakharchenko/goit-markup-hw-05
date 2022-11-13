@@ -238,6 +238,28 @@ justify-items: center;
     margin-right: 30px;}
 .projects-list-item:last-child {
     margin-left: 30px;}
+.box {
+    position: relative;
+    
+}
+.projects-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color:rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+}
+.projects-overlay > p {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--banner-text);
+}
 /*команда*/
 .team {
     background-color:var(--team-background-color);      
@@ -473,3 +495,28 @@ justify-content: center;}
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;}
+
+.portfolio-box {
+    position: relative;
+    overflow: hidden;}
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+.portfolio-overlay > p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--banner-text);
+    padding: 63px 24px;}
+
+.portfolio-box:hover .portfolio-overlay {
+        transform: translateY(-2px);}
