@@ -424,10 +424,11 @@ margin-left: 10px;}
     align-items: center;
     display: flex;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;}
 .footer-social-link:hover, .footer-social-link:focus {
     background-color: var(--nav-color);
-    border-radius: 50%;}    
+   }    
 
 
 /*портфоліо*/
@@ -552,7 +553,7 @@ margin-left: 10px;}
     top: 0px;
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity;}
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .is-hidden {
     visibility: hidden;
     opacity: 0;
